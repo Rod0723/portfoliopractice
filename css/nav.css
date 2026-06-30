@@ -1,0 +1,83 @@
+.navigation-container {
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+}
+
+h1, h2, h3, h4, p, a {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+.navigation-header {
+    width: 270px;
+    height: 100%;
+    background-image: url(../img/Logo1.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 185px;
+}
+
+.navigation-text-buttons {
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 5px;
+}
+
+.navigation-text-buttons a {
+    color: aliceblue;
+    padding: 10px;
+    font-size: 24px;
+}
+
+.navigation-text-buttons a:hover {
+    color: rgb(92, 245, 95);
+}
+
+.navigation-social-media {
+    cursor: pointer;
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-right: 150px;
+}
+
+.navigation-facebook {
+    width: 38px;
+    height: 38px;
+    background-image: url(../img/Facebook-w.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navigation-facebook:hover {
+    background-image: url(../img/Facebook.png);
+}
+
+.navigation-instagram {
+    width: 38px;
+    height: 38px;
+    background-image: url(../img/instagram-white.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navigation-instagram:hover {
+    width: 38px;
+    height: 38px;
+    background-image: url(../img/instagram.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}

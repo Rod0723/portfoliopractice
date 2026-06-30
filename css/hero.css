@@ -1,0 +1,54 @@
+main{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/guy.png),url(../img/mainbackground.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom, center;
+    background-size: 90vh, cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 400px;
+}
+
+
+.main-intro p{
+    font-size: 22px;
+    color: aliceblue;
+}   
+
+.main-intro h1{
+    font-size: 54px;
+    margin-bottom: 20px;
+    font: 84px;
+    position: relative;
+    color: aliceblue;
+}   
+
+.main-intro a {
+    font-size: 24px;
+    color: aliceblue;
+    padding: 10px 10px;
+    display: block;
+    background-color: blue;
+    border-radius: 12px;
+    width: fit-content;
+    margin-top: 30px;
+}
+
+.main-quotes1 {
+    font-size: 22px;
+    color: aliceblue;
+    padding-left: 20px;
+    border-left: 4px solid #F4F2F2;
+    margin-bottom: 110px;
+    margin-right: 0px;
+}
+
+.main-quotes2 {
+    font-size: 22px;
+    color: aliceblue;
+    padding-left: 20px;
+    border-left: 4px solid #FF9E20;
+    margin-left: 55px;
+}

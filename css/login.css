@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-image: url(../img/background1.jpg);
+    background-size: cover;
+    display: flex;
+    font-family: 'Poppins';
+    color: aliceblue;
+    justify-content: center;
+    align-items: center;
+}
+
+.glass-card {
+    width: 450px;  
+    height: 500px;
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; 
+
+    backdrop-filter: blur(10px) saturate(168%);
+    -webkit-backdrop-filter: blur(10px) saturate(168%);
+    background-color: rgba(17, 25, 40, 0.24);
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.text-login {
+    text-align: center;
+    color: aliceblue;
+    font-family: 'Poppins';
+}
+
+.user-input {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.user-input input {
+    width: 100%;
+    height: 50px;
+
+    padding: 0 15px;
+    box-sizing: border-box;
+
+    border-radius: 12px;
+    border: 2px solid #6c63ff;
+
+    background-color: aliceblue;
+
+    color: #333;           
+    caret-color: #0066CC; 
+    font-size: 16px;
+}
+
+.forgot-password {
+    text-align: right;
+    color: rgb(210, 209, 209);
+    cursor: pointer;
+}
+
+.forgot-password :hover {
+    color: aliceblue;
+}
+
+.login-button {
+    cursor: pointer;
+    width: 100%;
+    height: 48px;
+    border-radius: 12px;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #0066CC ;
+}
+
+.login-button:hover {
+    background-color: #0055b3;
+}

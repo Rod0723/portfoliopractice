@@ -1,0 +1,143 @@
+main {
+    width: 100%;
+    height: calc(110vh - 60px);
+    margin-top: 4;
+    background-color: black;
+    background-image: url(../img/guy.png), url(../img/bg.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: 80vh,cover;
+    background-repeat: no-repeat;
+    background-position: bottom, center;
+}
+
+main .main-hero h1 {
+    text-transform: uppercase;
+    font-size: 64px;
+    line-height: 82px;
+}
+
+main p {
+    font-size: 18px;
+    line-height: 30px;
+}
+
+main a {
+    font-size: 18px;
+    display: block;
+    background-color: blue;
+    padding: 10px 20px;
+    width: fit-content;
+    margin-top: 20px;
+    border-radius: 12px;
+}
+
+main a:hover {
+    background-color: rgb(14, 2, 79);
+}
+
+main .main-quotes p {
+    border-left: 4px solid #f000ff;
+    padding-left: 20px;
+    margin: 40px 0;
+}
+
+main .main-quotes p:nth-child(2) {
+    margin-left: 100px;
+}
+
+main .main-hero {
+    position: relative;
+    right: 18vh;
+}
+
+main .main-quotes {
+    position: relative;
+    left: 12vh;
+}
+
+/* category */
+
+.index-category {
+    padding: 60px 0;
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+    text-transform: uppercase;
+}
+
+.index-category h3 {
+    display: flex;
+    align-self: center;
+    text-align: center;
+}
+
+.index-category-box1 {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f000ff;
+}
+
+.index-category-box2 {
+    width: 150px;
+    height: 150px;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+}
+
+.index-category-box3 {
+    width: 150px;
+    height: 150px;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.index-category-box4 {
+    width: 150px;
+    height: 150px;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-footer {
+    width: 100%;
+    height: 200px;
+    background-color: #010101;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-footer-aboutme {
+    padding: 20px;
+}
+
+.main-footer-aboutme h1 {
+    text-transform: uppercase;
+    font-size: 32px;
+    line-height: 48px;
+}
+
+.main-footer-aboutme h3 {
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 48px;
+}
+
+.main-footer-aboutme a {
+    width: fit-content;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: blue;
+}
