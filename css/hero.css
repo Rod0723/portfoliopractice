@@ -1,54 +1,109 @@
-main{
+main {
     width: 100%;
-    height: 100vh;
-    background-image: url(../img/guy.png),url(../img/mainbackground.jpg);
+    min-height: 100vh;
+
+    background-image: url(../img/guy.png), url(../img/mainbackground.jpg);
     background-repeat: no-repeat;
-    background-position: bottom, center;
+    background-position: bottom center, center;
     background-size: 90vh, cover;
+
     display: flex;
     justify-content: center;
     align-items: center;
-    column-gap: 400px;
+    gap: clamp(40px, 10vw, 300px);
+
+    padding: 0 5%;
 }
 
-
-.main-intro p{
-    font-size: 22px;
-    color: aliceblue;
-}   
-
-.main-intro h1{
-    font-size: 54px;
+.main-intro h1 {
+    font-size: clamp(48px, 6vw, 84px);
     margin-bottom: 20px;
-    font: 84px;
-    position: relative;
     color: aliceblue;
-}   
+}
+
+.main-intro p {
+    font-size: clamp(18px, 2vw, 22px);
+    color: aliceblue;
+}
 
 .main-intro a {
-    font-size: 24px;
-    color: aliceblue;
-    padding: 10px 10px;
-    display: block;
-    background-color: blue;
-    border-radius: 12px;
-    width: fit-content;
+    display: inline-block;
     margin-top: 30px;
+    padding: 12px 24px;
+    font-size: 22px;
+    color: white;
+    background: blue;
+    border-radius: 12px;
 }
 
-.main-quotes1 {
-    font-size: 22px;
-    color: aliceblue;
-    padding-left: 20px;
-    border-left: 4px solid #F4F2F2;
-    margin-bottom: 110px;
-    margin-right: 0px;
+@media (max-width: 768px) {
+
+    main {
+        flex-direction: column;
+        text-align: center;
+
+        gap: 50px;
+        padding: 100px 20px 40px;
+
+        background-size: 55vw, cover;
+        background-position: bottom center, center;
+    }
+
+    .main-intro h1 {
+        font-size: 48px;
+    }
+
+    .main-intro p {
+        font-size: 18px;
+    }
+
+    .main-intro a {
+        margin: 25px auto 0;
+    }
+
+    .main-quotes1,
+    .main-quotes2 {
+        margin: 0;
+        font-size: 18px;
+        text-align: left;
+    }
+
+    .main-quotes2 {
+        margin-top: 20px;
+    }
+
 }
 
-.main-quotes2 {
-    font-size: 22px;
-    color: aliceblue;
-    padding-left: 20px;
-    border-left: 4px solid #FF9E20;
-    margin-left: 55px;
+@media (max-width: 480px) {
+
+    main {
+        min-height: 100vh;
+
+        padding: 120px 20px 40px;
+
+        background-size: 70vw, cover;
+        background-position: bottom center, center;
+    }
+
+    .main-intro h1 {
+        font-size: 34px;
+        line-height: 42px;
+    }
+
+    .main-intro p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .main-intro a {
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+
+    .main-quotes1,
+    .main-quotes2 {
+        font-size: 16px;
+        padding-left: 15px;
+    }
+
 }
