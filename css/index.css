@@ -141,3 +141,133 @@ main .main-quotes {
     padding: 10px 20px;
     background-color: blue;
 }
+
+/* ==========================
+   Mobile Responsive
+========================== */
+
+@media screen and (max-width: 768px) {
+
+    /* Hero Section */
+
+    main {
+        height: auto;
+        min-height: 100vh;
+        padding: 60px 20px;
+        flex-direction: column;
+        text-align: center;
+
+        background-size: 60vw, cover;
+        background-position: bottom center, center;
+    }
+
+    main .main-hero {
+        right: 0;
+        order: 1;
+    }
+
+    main .main-hero h1 {
+        font-size: 42px;
+        line-height: 50px;
+    }
+
+    main p {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    main a {
+        margin: 20px auto;
+    }
+
+    /* Quotes */
+
+    main .main-quotes {
+        left: 0;
+        margin-top: 40px;
+        order: 2;
+        width: 100%;
+    }
+
+    main .main-quotes p {
+        margin: 20px 0;
+        text-align: left;
+    }
+
+    main .main-quotes p:nth-child(2) {
+        margin-left: 0;
+    }
+
+    /* Category */
+
+    .index-category {
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 40px 20px;
+    }
+
+    .index-category-box1,
+    .index-category-box2,
+    .index-category-box3,
+    .index-category-box4 {
+        width: 45%;
+        height: 130px;
+    }
+
+    /* Footer */
+
+    .main-footer {
+        height: auto;
+        padding: 40px 20px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .main-footer-aboutme {
+        padding: 10px;
+    }
+
+    .main-footer-aboutme h1 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .main-footer-aboutme h3 {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .main-footer-aboutme a {
+        margin: 20px auto 0;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    main {
+        background-size: 70vw, cover;
+    }
+
+    main .main-hero h1 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    main p {
+        font-size: 15px;
+    }
+
+    .index-category-box1,
+    .index-category-box2,
+    .index-category-box3,
+    .index-category-box4 {
+        width: 100%;
+        height: 120px;
+    }
+
+    .main-footer-aboutme h1 {
+        font-size: 24px;
+    }
+
+}
