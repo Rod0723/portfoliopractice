@@ -107,3 +107,32 @@ main {
     }
 
 }
+
+@media (max-width: 768px) {
+
+    main {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: center;
+
+        min-height: 100vh;
+        padding: 100px 20px 40px;
+
+        gap: 40px;
+
+        background-size: 60vw, cover;
+        background-position: bottom center, center;
+    }
+
+    .main-quotes {
+        width: 100%;
+    }
+
+    .main-quotes1,
+    .main-quotes2 {
+        margin: 20px 0;
+        text-align: left;
+    }
+
+}
